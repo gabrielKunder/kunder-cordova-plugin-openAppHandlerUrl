@@ -1,0 +1,28 @@
+{
+  "name": "kunder-cordova-plugin-openAppHandlerUrl",
+  "version": "0.1.0",
+  "description": "This cordova plugin allows to handle urls with openHandleUrl",
+  "cordova": {
+    "id": "kunder-cordova-plugin-openAppHandlerUrl",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunder-lab/kunder-cordova-plugin-openAppHandlerUrl.git"
+  },
+  "keywords": [
+    "cordova",
+    "handleOpenURL",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "kunder",
+  "license": "https://github.com/kunder-lab/kunder-cordova-plugin-openAppHandlerUrl#LICENSE",
+  "bugs": {
+    "url": "https://github.com/kunder-lab/kunder-cordova-plugin-openAppHandlerUrl/issues"
+  },
+  "homepage": "https://github.com/kunder-lab/kunder-cordova-plugin-openAppHandlerUrl#readme"
+}

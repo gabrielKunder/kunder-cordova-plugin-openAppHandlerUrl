@@ -8,7 +8,23 @@ window.handleOpenURL = function(url) {
         window.registeredHandlerOpenUrl(url);
       } else {
         localStorage.savedOpenUrl = parameters;
-      } 
+      }
     }
   }
 };
+
+if (window.webintent){
+    window.webintent.getUri(function(url) {
+        if(url !== "") {
+            localStorage.savedOpenUrl = url;
+        }
+    });
+
+    window.webintent.onNewIntent(function(url) {
+        if(url !== "") {
+            localStorage.savedOpenUrl = url;
+        }
+    });
+}
+
+

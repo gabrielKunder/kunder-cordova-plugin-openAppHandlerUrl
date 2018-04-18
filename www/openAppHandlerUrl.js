@@ -21,3 +21,12 @@ window.webintent.onNewIntent(function(parameters) {
         }
     }
 });
+
+window.webintent.getUri(function(parameters) {
+    'use strict';
+    if (cordova.platformId === 'android') {
+        if (parameters) {
+            localStorage.savedOpenUrl = parameters;
+        }
+    }
+});

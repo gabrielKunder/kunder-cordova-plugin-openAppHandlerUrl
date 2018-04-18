@@ -12,3 +12,12 @@ window.handleOpenURL = function(url) {
     }
   }
 };
+
+window.webintent.onNewIntent(function(parameters) {
+    'use strict';
+    if (cordova.platformId === 'android') {
+        if (parameters) {
+            localStorage.savedOpenUrl = parameters;
+        }
+    }
+});
